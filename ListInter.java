@@ -77,7 +77,8 @@ class ListInter {
 
 		curr = node;
 		while(curr != null) {
-			curr = curr->next;
+			// hava class
+			curr = curr.next;
 			num++;
 		}
 
@@ -99,7 +100,7 @@ class ListInter {
         list.h2.next = new Node(15); 
         list.h2.next.next = new Node(30); 
   
-        System.out.println("The node of intersection is " + list.getThatNode()); 
+        System.out.println("The node of intersection is " + list.getThatNode().val); 
   
 		
 	}
